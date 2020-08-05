@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    from src.utils.tools import create_logger
+  File "/home/user10000419/notespace/src/utils/tools.py", line 17, in <module>
+    import lightgbm as lgb
+ModuleNotFoundError: No module named 'lightgbm'
+Traceback (most recent call last):
+  File "models.py", line 25, in <module>
+    from src.data.mlData import MLData
+ModuleNotFoundError: No module named 'src'
+Using TensorFlow backend.
+load
+res152 is ok
+bert is ok
+2020-08-01 20:44:22,505 - /home/user10000419/notespace/src/word2vec/embedding.py[line:191] - INFO: load tfidf model
+2020-08-01 20:44:41,954 - /home/user10000419/notespace/src/word2vec/embedding.py[line:194] - INFO: load w2v model
+2020-08-01 20:44:50,739 - /home/user10000419/notespace/src/word2vec/embedding.py[line:198] - INFO: load fast model
+2020-08-01 20:44:57,627 - /home/user10000419/notespace/src/word2vec/embedding.py[line:201] - INFO: load lda model
+2020-08-01 20:44:58,317 - /home/user10000419/notespace/src/data/mlData.py[line:41] - INFO: load data
+debug
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /tmp/jieba.cache
+Loading model cost 0.884 seconds.
+Prefix dict has been built succesfully.
+111
+111
+2020-08-01 20:49:05,630 - /home/user10000419/notespace/src/ML/models.py[line:227] - INFO: get all freature
+2020-08-01 20:49:05,632 - /home/user10000419/notespace/src/ML/models.py[line:119] - INFO: generate embedding feature 
+/usr/local/lib/python3.6/dist-packages/sklearn/feature_extraction/text.py:386: UserWarning: Your stop_words may be inconsistent with your preprocessing. Tokenizing the stop words generated tokens ['exp', 'lex', 'sub', 'sup', '①①', '①②', '①③', '①④', '①⑤', '①⑥', '①⑦', '①⑧', '①⑨', '①ａ', '①ｂ', '①ｃ', '①ｄ', '①ｅ', '①ｆ', '①ｇ', '①ｈ', '①ｉ', '①ｏ', '②①', '②②', '②③', '②④', '②⑤', '②⑥', '②⑦', '②⑧', '②⑩', '②ａ', '②ｂ', '②ｃ', '②ｄ', '②ｅ', '②ｆ', '②ｇ', '②ｈ', '②ｉ', '②ｊ', '③①', '③⑩', '③ａ', '③ｂ', '③ｃ', '③ｄ', '③ｅ', '③ｆ', '③ｇ', '③ｈ', '④ａ', '④ｂ', '④ｃ', '④ｄ', '④ｅ', '⑤ａ', '⑤ｂ', '⑤ｄ', '⑤ｅ', '⑤ｆ', '一一', '一个', '一些', '一切', '一则', '一方面', '一旦', '一来', '一样', '一番', '一直', '一般', '万一', '上下', '不仅', '不但', '不光', '不单', '不只', '不如', '不怕', '不惟', '不成', '不拘', '不比', '不然', '不特', '不独', '不管', '不论', '不过', '不问', '与其', '与否', '与此同时', '两者', '为了', '为什么', '为何', '为着', '乃至', '之一', '之所以', '之类', '乌乎', '也好', '也就是说', '也罢', '于是', '于是乎', '云云', '人家', '什么', '什么样', '从而', '他人', '他们', '以便', '以免', '以及', '以至', '以至于', '以致', '任何', '任凭', '似的', '但是', '何况', '何处', '何时', '作为', '你们', '使得', '例如', '依照', '俺们', '倘使', '倘或', '倘然', '倘若', '假使', '假如', '假若', '关于', '其一', '其中', '其二', '其他', '其余', '其它', '其次', '具体地说', '具体说来', '再者', '再说', '况且', '几时', '凭借', '别的', '别说', '前后', '前者', '加之', '即令', '即使', '即便', '即或', '即若', '及其', '及至', '反之', '反过来', '反过来说', '另一方面', '另外', '只是', '只有', '只要', '只限', '叮咚', '可以', '可是', '可见', '各个', '各位', '各种', '各自', '同时', '向着', '否则', '吧哒', '呜呼', '呼哧', '咱们', '哈哈', '哎呀', '哎哟', '哪个', '哪些', '哪儿', '哪天', '哪年', '哪怕', '哪样', '哪边', '哪里', '哼唷', '啪达', '喔唷', '嗡嗡', '嘎登', '因为', '因此', '因而', '固然', '在下', '多少', '她们', '如上所述', '如何', '如其', '如果', '如此', '如若', '宁可', '宁愿', '宁肯', '它们', '对于', '尔后', '尚且', '就是', '就是说', '尽管', '岂但', '并且', '开外', '开始', '当着', '彼此', '怎么', '怎么办', '怎么样', '怎样', '总之', '总的来看', '总的来说', '总的说来', '总而言之', '恰恰相反', '慢说', '我们', '或是', '或者', '所以', '抑或', '按照', '换句话说', '换言之', '接着', '故此', '旁人', '无宁', '无论', '既是', '既然', '时候', '是的', '有些', '有关', '有的', '有的是', '朝着', '本着', '来着', '极了', '果然', '果真', '某个', '某些', '根据', '正如', '此外', '此间', '毋宁', '每当', '比如', '比方', '沿着', '漫说', '然则', '然后', '然而', '照着', '甚么', '甚而', '甚至', '由于', '由此可见', '的话', '相对而言', '省得', '着呢', '第二', '等等', '紧接着', '纵令', '纵使', '纵然', '经过', '结果', '继而', '综上所述', '罢了', '而且', '而况', '而外', '而已', '而是', '而言', '自个儿', '自从', '自各儿', '自家', '自己', '自身', '至于', '若是', '若非', '莫若', '虽则', '虽然', '虽说', '要不', '要不是', '要不然', '要么', '要是', '许多', '设使', '设若', '诸位', '谁知', '起见', '趁着', '越是', '较之', '还是', '还有', '这个', '这么', '这么些', '这么样', '这么点儿', '这些', '这会儿', '这儿', '这就是说', '这时', '这样', '这边', '这里', '进而', '连同', '通过', '遵照', '那个', '那么', '那么些', '那么样', '那些', '那会儿', '那儿', '那时', '那样', '那边', '那里', '鄙人', '鉴于', '除了', '除此之外', '除非', '随着', '非但', '非徒', '顺着', '首先', '１２', 'ｌｉ', 'ｎｇ昉', 'ｚｘｆｉｔｌ'] not in stop_words.
+  'stop_words.' % sorted(inconsistent))
+transform w2v
