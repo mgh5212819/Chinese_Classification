@@ -7,23 +7,23 @@
 
 ## 具体给出的实现方式有三种：
 
-### 1. 特征工程（图片特征、Tfidf特征、LDA特征、窗口词向量、包括label交互词向量、bert预训练句向量、基本NLP特征）+ GBDT
+#### 1. 特征工程（图片特征、Tfidf特征、LDA特征、窗口词向量、包括label交互词向量、bert预训练句向量、基本NLP特征）+ GBDT
 
-### 2. 机器学习模型（包括RandomForestClassifier随机森林，LogisticRegression逻辑回归，MultinomialNB朴素贝叶斯，SVC支持向量机，LightGBM梯度提升决策树等等）
+#### 2. 机器学习模型（包括RandomForestClassifier随机森林，LogisticRegression逻辑回归，MultinomialNB朴素贝叶斯，SVC支持向量机，LightGBM梯度提升决策树等等）
 
-### 3. 深度学习模型（包括RNN、CNN、RCNN、RNN_ATT、Transformer、BERT、XLNet、Roberta等等）
+#### 3. 深度学习模型（包括RNN、CNN、RCNN、RNN_ATT、Transformer、BERT、XLNet、Roberta等等）
 
 
 
 ## 运行说明：
 
-### 第一步，运行 `src/word2vec/embedding.py` 去生成各种各样的词嵌入（包括word2v3c，fasttext，tfidf以及lda）
+#### 第一步，运行 `src/word2vec/embedding.py` 去生成各种各样的词嵌入（包括word2v3c，fasttext，tfidf以及lda）
 
-### 第二步，运行 `src/ML/main.py`参数选择 'feature_engineerning' 去进行特征工程 + GBDT
+#### 第二步，运行 `src/ML/main.py`参数选择 'feature_engineerning' 去进行特征工程 + GBDT
 
-### 第三步，运行 `src/ML/main.py`参数不选择 'feature_engineerning'可以尝试各种机器学习模型
+#### 第三步，运行 `src/ML/main.py`参数不选择 'feature_engineerning'可以尝试各种机器学习模型
 
-### 第四步，运行`src/DL/train.py`指定不同的model可以尝试不同的深度学习模型，例如`python3 train,py --model bert`  尝试bert模型。
+#### 第四步，运行`src/DL/train.py`指定不同的model可以尝试不同的深度学习模型，例如`python3 train,py --model bert`  尝试bert模型。
 
 
 
